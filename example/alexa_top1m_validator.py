@@ -1,8 +1,5 @@
-import sys
-sys.path.append('../') # path to import pyw3validator
-
 import csv # to parse alexa's list
-from pyw3validator import pyw3validator
+from pyw3 import validator
 
 
 class markup_check_for_alexa():
@@ -11,7 +8,7 @@ class markup_check_for_alexa():
         self.invalid_count = 0
         self.aborted_count = 0
         
-        self.validator = pyw3validator()
+        self.validator = validator()
 
         self.alexa_csv = csv.reader(open('top-1m.csv'), delimiter=',')
 

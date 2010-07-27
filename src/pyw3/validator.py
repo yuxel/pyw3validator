@@ -5,7 +5,7 @@
 
 import urllib
 
-class pyw3validator():
+class validator():
 
     # set default validator url
     def __init__(self):
@@ -56,7 +56,7 @@ class pyw3validator():
 
 # test
 if __name__ == "__main__":    
-    validator = pyw3validator()
+    validator = validator()
     #validator.set_validator_url("http://validator.w3.org/docs/api.html")
     try:
         status = validator.check_URI("yuxel.net")
